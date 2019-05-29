@@ -1,8 +1,8 @@
 import React from 'react';
 
 // COMPONENT IMPORTS
-import TopPanel from './TopPanel';
-import ContentContainer from './ContentContainer';
+import TopPanel from './right_panel_components/TopPanel';
+import ContentContainer from './right_panel_components/ContentContainer';
 
 function RightPanel() {
   return(
