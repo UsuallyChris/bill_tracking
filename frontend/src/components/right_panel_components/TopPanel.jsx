@@ -2,7 +2,9 @@ import React from 'react';
 
 function TopPanel() {
   return(
-    <h2>Top Panel</h2>
+    <div className="top-panel">
+      <h2>Top Panel</h2>
+    </div>
   );
 };
 
