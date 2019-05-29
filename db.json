@@ -1,0 +1,11 @@
+{
+  "bills": [
+    {"id": "1", "name": "Bill 1", "date_due": "dateDue1", "amount": "amountDue1", "type": "billType1"},
+    {"id": "2", "name": "Bill 2", "date_due": "dateDue2", "amount": "amountDue2", "type": "billType2"},
+    {"id": "3", "name": "Bill 3", "date_due": "dateDue3", "amount": "amountDue3", "type": "billType3"},
+    {"id": "4", "name": "Bill 4", "date_due": "dateDue4", "amount": "amountDue4", "type": "billType1"},
+    {"id": "5", "name": "Bill 5", "date_due": "dateDue5", "amount": "amountDue5", "type": "billType2"},
+    {"id": "6", "name": "Bill 6", "date_due": "dateDue6", "amount": "amountDue6", "type": "billType3"},
+    {"id": "7", "name": "Bill 7", "date_due": "dateDue7", "amount": "amountDue7", "type": "billType1"}
+  ]
+}
