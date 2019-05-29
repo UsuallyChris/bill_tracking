@@ -3,6 +3,15 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+// WEBFONT LOADER IMPORT AND CONFIG
+import WebFont from 'webfontloader';
+
+WebFont.load({
+  google: {
+    families: ['Abril+Fatface', 'Poppins:300,600']
+  }
+});
+
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

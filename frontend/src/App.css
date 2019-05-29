@@ -6,6 +6,22 @@
   box-sizing: border-box;
 }
 
+/** FONTS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Abril Fatface', 'Courier New', Courier, monospace;
+}
+
+p,
+a {
+  font-family: 'Poppins';
+}
+
 /** FORMATTING AND POSITIONING */
 
 .main-container {
