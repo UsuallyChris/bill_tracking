@@ -65,3 +65,18 @@ a {
   justify-content: space-around;
   border-top: 2px solid #eee; 
 }
+
+/** CONTENT/CARD STYLES */
+
+.card {
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-around;
+}
