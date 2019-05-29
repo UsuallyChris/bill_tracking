@@ -57,7 +57,11 @@ a {
 .content-container {
   min-height: 70vh;
   background: #f0ffff;
-  padding: 3vh 10vw;
+  padding: 0 10vw;
+}
+
+.content-container h2 {
+  margin: 5vh auto;
 }
 
 .logout {
