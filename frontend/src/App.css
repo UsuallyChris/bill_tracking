@@ -1,8 +1,12 @@
+/** GLOBALS */
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
+/** FORMATTING AND POSITIONING */
 
 .main-container {
   display: flex;
@@ -33,6 +37,7 @@
 .content-container {
   min-height: 70vh;
   background: #f0ffff;
+  padding: 5vh 10vw;
 }
 
 .logout {
