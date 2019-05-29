@@ -2,15 +2,13 @@ import React from 'react';
 
 // COMPONENT IMPORTS
 import LeftPanel from './LeftPanel';
-import TopPanel from './TopPanel';
-import ContentContainer from './ContentContainer';
+import RightPanel from './RightPanel';
 
 function Dashboard() {
   return(
     <div className="main-container">
       <LeftPanel />
-      <TopPanel />
-      <ContentContainer />
+      <RightPanel />
     </div>
   );
 }
