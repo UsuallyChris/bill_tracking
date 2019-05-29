@@ -1,11 +1,13 @@
 import React from 'react';
+import './normalize.css';
 import './App.css';
+
+// IMPORT COMPONENTS
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
-    <div>
-      <h1>Home Page</h1>
-    </div>
+    <Dashboard />
   );
 }
 
