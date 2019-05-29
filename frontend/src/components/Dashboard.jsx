@@ -1,9 +1,16 @@
 import React from 'react';
 
+// COMPONENT IMPORTS
+import LeftPanel from './LeftPanel';
+import TopPanel from './TopPanel';
+import ContentContainer from './ContentContainer';
+
 function Dashboard() {
   return(
     <div className="main-container">
-      <h1>Home Page</h1>
+      <LeftPanel />
+      <TopPanel />
+      <ContentContainer />
     </div>
   );
 }
