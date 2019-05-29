@@ -6,7 +6,7 @@ import ContentContainer from './right_panel_components/ContentContainer';
 
 function RightPanel() {
   return(
-    <div className="right-panel">
+    <div className="right-container">
       <TopPanel />
       <ContentContainer />
     </div>

@@ -6,4 +6,14 @@
 
 .main-container {
   display: flex;
+  width: 100vw;
+}
+
+.left-container {
+  height: 100vh;
+  width: 25vw;
+}
+
+.right-container {
+  width: 75vw;
 }
