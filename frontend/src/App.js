@@ -11,15 +11,15 @@ import {
 
 // IMPORT COMPONENTS
 import Dashboard from './components/Dashboard';
-import AuthTest from './components/auth/AuthTest';
 import Register from './components/auth/Register';
+import VerifyNewUser from './components/auth/VerifyNewUser';
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
         <Route path="/dashboard" component={Dashboard}/>
-        <Route path="/verify/:key" component={AuthTest}/>
+        <Route path="/verify/:key" component={VerifyNewUser}/>
         <Route path="/register" component={Register}/>
       </Switch>
     </BrowserRouter>
