@@ -37,6 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # THIRD PARTY APPS
+    'rest_framework',
+    'rest_email_auth',
+
+    # LOCAL APPS
+    'users.apps.UsersConfig'
 ]
 
 MIDDLEWARE = [
@@ -118,3 +125,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# EMAIL BACKEND CONFIG
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# DJANGO-REST-EMAIL-AUTH CONFIG
+REST_EMAIL_AUTH = {
+    'EMAIL_VERIFICATION_URL': 'http://localhost:3000/verify/{key}',
+    'PASSWORD_RESET_URL': 'https://example.com/reset/{key}',
+}
+
+AUTHENTICATION_BACKENDS = [
+    'rest_email_auth.authentication.VerifiedEmailBackend',
+    'django.contrib.auth.backends.ModelBackend',
+]
