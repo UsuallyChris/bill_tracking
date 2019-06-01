@@ -41,12 +41,17 @@ INSTALLED_APPS = [
     # THIRD PARTY APPS
     'rest_framework',
     'rest_email_auth',
+    'corsheaders',
 
     # LOCAL APPS
     'users.apps.UsersConfig'
 ]
 
 MIDDLEWARE = [
+
+    # CORSHEADERS MIDDLEWARE
+    'corsheaders.middleware.CorsMiddleware',
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -126,6 +131,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# CORS WHITELIST
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:3000",
+]
 
 # EMAIL BACKEND CONFIG
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
