@@ -29,7 +29,7 @@ class VerifyNewUser extends Component {
     e.preventDefault();
     const {key, password} = this.state;
     const verifyEmail = {key, password};
-    axios.post("http://localhost:8000/account/verify-email/", verifyEmail)
+    axios.post("http://localhost:8000/api/account/verify-email/", verifyEmail)
       .then(res => {
         console.log(res);
       })

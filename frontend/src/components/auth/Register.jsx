@@ -24,7 +24,7 @@ class Register extends Component {
     e.preventDefault();
     const {username, email, password} = this.state;
     const user = {username, email, password};
-    axios.post("http://localhost:8000/account/register/", user)
+    axios.post("http://localhost:8000/api/account/register/", user)
       .then(res => {
         console.log(res);
       })
