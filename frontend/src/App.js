@@ -16,8 +16,10 @@ import AuthTest from './components/auth/AuthTest';
 function App() {
   return (
     <BrowserRouter>
-      <Route path="/dashboard" component={Dashboard}/>
-      <Route path="/verify/:key" component={AuthTest}/>
+      <Switch>
+        <Route path="/dashboard" component={Dashboard}/>
+        <Route path="/verify/:key" component={AuthTest}/>
+      </Switch>
     </BrowserRouter>
   );
 }
