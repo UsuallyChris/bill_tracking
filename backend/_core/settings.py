@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'corsheaders',
 
     # LOCAL APPS
-    'users.apps.UsersConfig'
+    'users.apps.UsersConfig',
+    'bills.apps.BillsConfig',
 ]
 
 MIDDLEWARE = [
